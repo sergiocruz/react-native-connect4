@@ -1,4 +1,4 @@
-import React, { View, Text } from 'react-native';
+import React, { View, Text, TouchableHighlight } from 'react-native';
 import { Board as BoardClass } from './lib/index';
 
 export default class Board extends React.Component {
@@ -9,11 +9,12 @@ export default class Board extends React.Component {
     const columns = board.grid.map((column, y) => {
       return (
         <View>
-          <Text>Column #{y}</Text>
 
           {column.map((cell, x) => {
             return (
-              <Text>Cell #{x}</Text>
+              <TouchableHighlight style={{padding: '10', margin: '3 0', backgroundColor: '#EBF9FF', borderRadius: '20%'}}>
+                <Text>#{x}</Text>
+              </TouchableHighlight>
             )
           })}
 
@@ -22,9 +23,12 @@ export default class Board extends React.Component {
     });
 
     return (
-      <View>
+      <View style={{padding: '10'}}>
         <Text>Board</Text>
-        {columns}
+
+        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+          {columns}
+        </View>
       </View>
     );
   }
