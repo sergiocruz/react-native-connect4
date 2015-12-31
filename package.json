@@ -1,0 +1,10 @@
+{
+  "name": "connect4",
+  "version": "0.0.1",
+  "description": "Connect4 game with Exponent!",
+  "main": "main.js",
+  "author": "Sergio Cruz <hello@sergiocruz.me>",
+  "dependencies": {
+    "react-native": "exponentjs/react-native#2015-11-13"
+  }
+}
