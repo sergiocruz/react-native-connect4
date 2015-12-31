@@ -24,6 +24,7 @@ let ExPhotoGallery = require('./ExPhotoGallery');
 let ExScreen = require('./ExScreen');
 
 // const Connect4 = require('./components/connect4/connect4');
+import Connect4 from './components/connect4/connect4';
 
 let HORIZ_SPACE = 12;
 
@@ -48,6 +49,8 @@ class FirstExperience extends React.Component {
         headerColor={this.state.headerColor}
         scrollEnabled={!this.state.isBoxPressed}
         style={styles.container}>
+
+        <Connect4 />
 
         {/* Try editing this text and reloading your project in Exponent */}
         <Text style={styles.paragraph}>
