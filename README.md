@@ -2,6 +2,8 @@
 
 I recommend checking out the [ExponentJS Docs](https://exponentjs.com/docs) to learn how to get this game up and running.
 
+Already have ExponentJS setup on your phone? Check out the live app using its `exp` address: `exp://exp.host/@sergiocruz/connect4`
+
 ## How it works
 
 This is a simple implementation of the classic [Connect Four game](https://en.wikipedia.org/wiki/Connect_Four). To play, simply have a buddy next you and hand over the phone when it's their time to play. After they'll play they'll hand the phone back over to you, etc.
