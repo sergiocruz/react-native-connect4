@@ -12,9 +12,9 @@ This is a simple implementation of the classic [Connect Four game](https://en.wi
 
 As a next step I might turn this game into a full-on online multiplayer game. A few steps will be necessary to support this next major feature:
 
-- <input type="checkbox" disabled> Give users option to play locally or online
-- <input type="checkbox" disabled> Develop backend module to connect remote players
-- <input type="checkbox" disabled> Figure out how to handle game restarts (can any players restart the game at any time? etc.)
+- [ ] Give users option to play locally or online
+- [ ] Develop backend module to connect remote players
+- [ ] Figure out how to handle game restarts (can any players restart the game at any time? etc.)
 
 ## Ideas?
 
