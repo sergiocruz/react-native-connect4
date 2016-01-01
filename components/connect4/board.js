@@ -1,6 +1,16 @@
-import React, { View, Text, TouchableHighlight } from 'react-native';
+// Library dependencies
+import React, { View, Text } from 'react-native';
+import styles from './styles/stylesheet';
 import { Board as BoardClass } from './lib/index';
+import BoardStatus from './board-status';
 
+
+// Component dependencies
+import Cell from './cell';
+
+/**
+ * Board Component
+ */
 export default class Board extends React.Component {
   render() {
 
@@ -8,27 +18,28 @@ export default class Board extends React.Component {
 
     const columns = board.grid.map((column, y) => {
       return (
-        <View>
-
+        <View key={`column-${y}`}>
           {column.map((cell, x) => {
             return (
-              <TouchableHighlight style={{padding: '10', margin: '3 0', backgroundColor: '#EBF9FF', borderRadius: '20%'}}>
-                <Text>#{x}</Text>
-              </TouchableHighlight>
+              <Cell
+                key={`cell-${x}-${y}`}
+                cell={cell.toString()}
+                onAddPiece={() => { this.props.onAddPiece(y, board.nextPlayer) }} />
             )
           })}
-
         </View>
       )
     });
 
     return (
-      <View style={{padding: '10'}}>
-        <Text>Board</Text>
+      <View style={styles.board}>
 
-        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+        <View style={styles.columns}>
           {columns}
         </View>
+
+        <BoardStatus board={board} />
+
       </View>
     );
   }
@@ -40,5 +51,5 @@ export default class Board extends React.Component {
  */
 Board.propTypes = {
   board: React.PropTypes.instanceOf(BoardClass).isRequired,
-  addPiece: React.PropTypes.func.isRequired
+  onAddPiece: React.PropTypes.func.isRequired
 }

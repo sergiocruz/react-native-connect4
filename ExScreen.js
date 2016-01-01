@@ -31,7 +31,7 @@ class ExScreen extends React.Component {
 
     return (
       <View {...props}>
-        <ScrollView
+        <View
           ref={component => { this._scrollView = component; }}
           contentContainerStyle={styles.contentContainer}
           scrollEnabled={scrollEnabled}
@@ -40,7 +40,7 @@ class ExScreen extends React.Component {
           onScroll={this._handleScroll.bind(this)}>
           <View style={{ height: ExHeader.HEIGHT + STATUS_BAR_HEIGHT }} />
           {props.children}
-        </ScrollView>
+        </View>
         <ExHeader
           title={title}
           scrollDistance={this.state.scrollDistance}
