@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     borderRadius: 19,
     margin: 2,
     height: 30,
-    padding: 20,
+    padding: 18,
     width: 30,
   },
   cellRed: {
