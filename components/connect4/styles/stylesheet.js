@@ -11,6 +11,10 @@ export const colors = {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: colors.white,
+  },
   gameBoard: {
     padding: 10,
   },
