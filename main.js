@@ -25,8 +25,6 @@ class App extends React.Component {
 
         <Connect4 />
 
-
-
       </ExScreen>
     );
   }

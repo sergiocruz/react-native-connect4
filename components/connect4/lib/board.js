@@ -1,4 +1,15 @@
+/**
+ * Dependencies
+ */
 const matches = require('./matches');
+const config = require('./config');
+
+/**
+ * Max possible number of inserts:
+ * Number of rows multiplied by number of columns subtracted by one
+ * @return {Number}
+ */
+const MAX_INSERTS = (config.rows * config.columns);
 
 /**
  * Board class
@@ -76,7 +87,7 @@ class Board {
       this.nextPlayer = refreshPlayer(this.inserts);
 
       // Makes board innactive if somebody won
-      if (this.didSomebodyWin()) {
+      if (this.didSomebodyWin() || this.isGameTied()) {
         this.isActive = false;
       }
     }
@@ -92,12 +103,23 @@ class Board {
     return matches(this.grid);
 
   }
+
+  /**
+   * Is the game tied? Finds out by figuring out if the board is full
+   * @return {Boolean}
+   */
+  isGameTied() {
+
+    // Were there as many inserts as free spaces in the board?
+    return (this.inserts >= MAX_INSERTS);
+
+  }
 }
 
 
 /**
  *
- * Private properties
+ * Other properties (not part of Board class, but used by it)
  *
  */
 

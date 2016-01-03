@@ -4,7 +4,7 @@ import styles from './styles/stylesheet';
 import Board from './board';
 import BoardRestart from './board-restart';
 
-const Connect4 = require('./lib/index');
+import Connect4 from './lib/index';
 
 export default class Connect4Component extends React.Component {
 
@@ -53,7 +53,6 @@ export default class Connect4Component extends React.Component {
           onAddPiece={(columnIndex, piece) => { this.handleAddPiece(columnIndex, piece) }} />
 
         <BoardRestart onRestart={() => { this.handleRestart() }} />
-
 
       </View>
     );

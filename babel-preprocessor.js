@@ -3,7 +3,7 @@
 * since ExponentJS uses an older version of Babel, we couldn't include
 * a `.babelrc` file to this project.
 */
-*
+
 var babel = require('babel-core');
 
 module.exports = {

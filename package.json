@@ -25,7 +25,11 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageOnlyFrom": {
-      "components/connect4/lib/matches-horizontal.js": true
+      "components/connect4/lib/board.js": true,
+      "components/connect4/lib/match-diagonal.js": true,
+      "components/connect4/lib/match-horizontal.js": true,
+      "components/connect4/lib/match-vertical.js": true,
+      "components/connect4/lib/matches.js": true
     },
     "scriptPreprocessor": "<rootDir>/babel-preprocessor",
     "testFileExtensions": [

@@ -121,6 +121,13 @@ function isTopRight(grid) {
             found = 0;
           }
 
+          // Reset if there has been a piece found, but not this current piece
+          if (found > 0 && piece !== foundPiece) {
+            found  = 0;
+            foundPiece = 0;
+            continue;
+          }
+
           if (!!piece && (piece === foundPiece || !foundPiece) && (++found) === matchesRequired) {
             return true;
           }
