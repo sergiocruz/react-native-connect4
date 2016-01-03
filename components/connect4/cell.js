@@ -31,7 +31,7 @@ export default class Cell extends React.Component {
       <TouchableHighlight
         style={ getCellStyle(this.props.cell) }
         underlayColor={underlayColor}
-        onPress={() => { this.props.onAddPiece() }}>
+        onPress={() => { this.props.onAddPiece(); }}>
 
         {/* Empty view since `TouchableHighlight` needs a least one child */}
         <View></View>
@@ -44,4 +44,4 @@ export default class Cell extends React.Component {
 Cell.propTypes = {
   onAddPiece: React.PropTypes.func.isRequired,
   cell: React.PropTypes.string.isRequired
-}
+};

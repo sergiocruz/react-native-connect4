@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/sergiocruz/react-native-connect4.svg?branch=master)](https://travis-ci.org/sergiocruz/react-native-connect4)
+[![bitHound Score](https://www.bithound.io/github/sergiocruz/react-native-connect4/badges/score.svg)](https://www.bithound.io/github/sergiocruz/react-native-connect4/master)
+
 # ExponentJS Connect4 Game
 
 I recommend checking out the [ExponentJS Docs](https://exponentjs.com/docs) to learn how to get this game up and running.

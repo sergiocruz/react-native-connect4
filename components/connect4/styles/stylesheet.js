@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
   }
-})
+});
 
 
 export default styles;
@@ -100,6 +100,6 @@ export function getCellStyle(player) {
   }
 
   // Returns array
-  return cellStyles
+  return cellStyles;
 
 }

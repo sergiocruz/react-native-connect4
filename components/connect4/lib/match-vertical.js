@@ -1,10 +1,12 @@
 import { matchesRequired } from './config';
 
+module.exports = isVertical;
+
 /**
  * Are there matches found vertically?
  * @return {Boolean}
  */
-export default function isVertical(grid) {
+function isVertical(grid) {
 
   let found = 0;
   let foundPiece = 0;
@@ -39,8 +41,8 @@ export default function isVertical(grid) {
         didFind = true;
         return;
       }
-    })
-  })
+    });
+  });
 
   return didFind;
 }

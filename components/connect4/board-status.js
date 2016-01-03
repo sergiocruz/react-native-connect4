@@ -21,7 +21,7 @@ export default class BoardStatus extends React.Component {
         styles.boardStatusNextTurnText,
         (board.nextPlayer === 'red')?
           styles.boardStatusNextTurnTextRed : styles.boardStatusNextTurnTextBlue
-      ]
+      ];
 
       nextTurn = (
         <View style={styles.boardStatusNextTurn}>

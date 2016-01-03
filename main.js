@@ -1,4 +1,4 @@
-import React, { AppRegistry, StatusBarIOS } from 'react-native';
+import React, { AppRegistry, StatusBarIOS, Text } from 'react-native';
 
 import ExScreen from './ExScreen';
 import Connect4 from './components/connect4/connect4';

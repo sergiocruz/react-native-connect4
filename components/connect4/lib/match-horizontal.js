@@ -1,8 +1,12 @@
-import {
-  columns as numCols,
-  rows as numRows,
+const config = require('./config');
+
+const {
+  columns,
+  rows,
   matchesRequired
-} from './config';
+} = config;
+
+module.exports = isHorizontal;
 
 /**
  * Are there any matches horizontally?
@@ -10,14 +14,14 @@ import {
  *
  * @return {Boolean}
  */
-export default function isHorizontal(grid) {
+function isHorizontal(grid) {
 
   // which piece was found and how many
   let found = 0;
   let foundPiece = 0;
 
-  for (let x = 0; x < numRows; x++) {
-    for (let y = 0; y < numCols; y++) {
+  for (let x = 0; x < rows; x++) {
+    for (let y = 0; y < columns; y++) {
 
       // Current piece in this row
       let piece = grid[y][x];

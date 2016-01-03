@@ -10,6 +10,4 @@ const config =  {
 
 };
 
-
-// Exports constant
-export default config;
+module.exports = config;
