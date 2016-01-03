@@ -1,12 +1,9 @@
 {
   "name": "connect4",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Connect4 game with Exponent!",
   "main": "main.js",
   "author": "Sergio Cruz <hello@sergiocruz.me>",
-  "repository": "https://github.com/sergiocruz/react-native-connect4.git",
-  "license": "MIT",
-  "private": true,
   "scripts": {
     "test": "jest",
     "jasmine": "jasmine"
@@ -43,5 +40,15 @@
       "react"
     ],
     "preprocessCachingDisabled": true
+  },
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiocruz/react-native-connect4.git"
+  },
+  "engines": {
+    "node": "4.1.x",
+    "npm": "2.14.x"
   }
 }
