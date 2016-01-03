@@ -1,5 +1,5 @@
 jest.dontMock('../../../../components/connect4/lib/match-horizontal');
-var isHorizontal = require('../../../../components/connect4/lib/match-horizontal')
+var isHorizontal = require('../../../../components/connect4/lib/match-horizontal');
 
 describe('isHorizontal', function() {
 

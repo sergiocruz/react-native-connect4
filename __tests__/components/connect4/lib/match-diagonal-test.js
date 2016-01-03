@@ -1,5 +1,5 @@
 jest.dontMock('../../../../components/connect4/lib/match-diagonal');
-var isDiagonal = require('../../../../components/connect4/lib/match-diagonal')
+var isDiagonal = require('../../../../components/connect4/lib/match-diagonal');
 
 describe('isDiagonal', function() {
 

@@ -10,6 +10,6 @@ export default class BoardRestart extends React.Component {
         onPress={() => this.props.onRestart()}>
         <Text style={styles.boardStatusRestartText}>RESTART GAME</Text>
       </TouchableHighlight>
-    )
+    );
   }
 }

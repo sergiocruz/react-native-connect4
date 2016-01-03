@@ -1,5 +1,5 @@
 jest.dontMock('../../../../components/connect4/lib/match-vertical');
-var isVertical = require('../../../../components/connect4/lib/match-vertical')
+var isVertical = require('../../../../components/connect4/lib/match-vertical');
 
 describe('isVertical', function() {
 
