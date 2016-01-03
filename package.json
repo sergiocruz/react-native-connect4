@@ -4,7 +4,40 @@
   "description": "Connect4 game with Exponent!",
   "main": "main.js",
   "author": "Sergio Cruz <hello@sergiocruz.me>",
+  "repository": "https://github.com/sergiocruz/react-native-connect4.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "jasmine": "jasmine"
+  },
   "dependencies": {
     "react-native": "exponentjs/react-native#2015-11-13"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-jest": "^6.0.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "jasmine": "^2.4.1",
+    "jest-cli": "^0.8.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageOnlyFrom": {
+      "components/connect4/lib/matches-horizontal.js": true
+    },
+    "scriptPreprocessor": "<rootDir>/babel-preprocessor",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "preprocessCachingDisabled": true
   }
 }

@@ -1,12 +1,10 @@
 // Importing modules that executes the matching for us
-import matches from './matches';
-import config from './config';
-import Board from './board';
+const matches = require('./matches');
+const config = require('./config');
+const Board = require('./board');
 
-const Connect4 = {
+module.exports = {
   Board,
   matches,
   config
 };
-
-export default Connect4;

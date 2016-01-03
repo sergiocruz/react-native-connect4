@@ -3,7 +3,8 @@ import styles from './styles/stylesheet';
 
 import Board from './board';
 import BoardRestart from './board-restart';
-import Connect4 from './lib/index';
+
+const Connect4 = require('./lib/index');
 
 export default class Connect4Component extends React.Component {
 

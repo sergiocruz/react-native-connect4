@@ -1,9 +1,9 @@
-import matches from './matches';
+const matches = require('./matches');
 
 /**
  * Board class
  */
-export default class Board {
+class Board {
 
   /**
    * Board constructor
@@ -119,3 +119,8 @@ let availablePlayers = [
 function refreshPlayer(inserts) {
   return availablePlayers[inserts % 2];
 }
+
+/**
+ * Exports Board class
+ */
+module.exports = Board;

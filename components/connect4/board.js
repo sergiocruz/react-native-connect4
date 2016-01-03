@@ -1,8 +1,9 @@
 // Library dependencies
 import React, { View, Text } from 'react-native';
 import styles from './styles/stylesheet';
-import { Board as BoardClass } from './lib/index';
 import BoardStatus from './board-status';
+
+const Connect4 = require('./lib/index');
 
 
 // Component dependencies
@@ -50,6 +51,6 @@ export default class Board extends React.Component {
  * @type {Object}
  */
 Board.propTypes = {
-  board: React.PropTypes.instanceOf(BoardClass).isRequired,
+  board: React.PropTypes.instanceOf(Connect4.Board).isRequired,
   onAddPiece: React.PropTypes.func.isRequired
 }
