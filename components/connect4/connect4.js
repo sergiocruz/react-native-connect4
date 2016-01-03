@@ -50,9 +50,9 @@ export default class Connect4Component extends React.Component {
       <View  style={styles.gameBoard}>
         <Board
           board={this.state.board}
-          onAddPiece={(columnIndex, piece) => { this.handleAddPiece(columnIndex, piece) }} />
+          onAddPiece={(columnIndex, piece) => { this.handleAddPiece(columnIndex, piece); }} />
 
-        <BoardRestart onRestart={() => { this.handleRestart() }} />
+        <BoardRestart onRestart={() => { this.handleRestart(); }} />
 
       </View>
     );

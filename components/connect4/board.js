@@ -25,11 +25,11 @@ export default class Board extends React.Component {
               <Cell
                 key={`cell-${x}-${y}`}
                 cell={cell.toString()}
-                onAddPiece={() => { this.props.onAddPiece(y, board.nextPlayer) }} />
-            )
+                onAddPiece={() => { this.props.onAddPiece(y, board.nextPlayer); }} />
+            );
           })}
         </View>
-      )
+      );
     });
 
     return (
@@ -53,4 +53,4 @@ export default class Board extends React.Component {
 Board.propTypes = {
   board: React.PropTypes.instanceOf(Connect4.Board).isRequired,
   onAddPiece: React.PropTypes.func.isRequired
-}
+};
