@@ -41,8 +41,8 @@ function isVertical(grid) {
         didFind = true;
         return;
       }
-    })
-  })
+    });
+  });
 
   return didFind;
 }

@@ -4,7 +4,7 @@ jest.dontMock('../../../../components/connect4/lib/match-horizontal');
 jest.dontMock('../../../../components/connect4/lib/match-vertical');
 jest.dontMock('../../../../components/connect4/lib/match-diagonal');
 
-var Board = require('../../../../components/connect4/lib/board')
+var Board = require('../../../../components/connect4/lib/board');
 
 describe('The Board Class', function() {
 
@@ -12,7 +12,7 @@ describe('The Board Class', function() {
 
   beforeEach(function() {
     board = new Board();
-  })
+  });
 
   it('should have an empty state on init', function() {
 
@@ -207,6 +207,4 @@ describe('The Board Class', function() {
   });
 
 
-
-
-})
+});
