@@ -5,8 +5,7 @@
   "main": "main.js",
   "author": "Sergio Cruz <hello@sergiocruz.me>",
   "scripts": {
-    "test": "jest",
-    "jasmine": "jasmine"
+    "test": "jest"
   },
   "dependencies": {
     "react-native": "exponentjs/react-native#2015-11-13"
