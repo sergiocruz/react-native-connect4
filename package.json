@@ -11,7 +11,7 @@
     "react-native": "exponentjs/react-native#2016-01-19"
   },
   "devDependencies": {
-    "babel-core": "^6.3.26",
+    "babel-core": "^6.4.5",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "jest-cli": "^0.8.2"
