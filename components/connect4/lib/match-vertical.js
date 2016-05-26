@@ -1,36 +1,41 @@
-import { matchesRequired } from './config';
+const config = require('./config');
+
+const {
+  columns,
+  rows,
+  matchesRequired
+} = config;
 
 module.exports = isVertical;
 
 /**
  * Are there matches found vertically?
+ * @param {Array} grid Multimentional array containing the connect4 grid
+ *
  * @return {Boolean}
  */
 function isVertical(grid) {
 
-  let found = 0;
-  let foundPiece = 0;
-  let didFind = false;
+  for (let x = 0; x < columns; x++) {
 
-  grid.forEach(column => {
-    column.forEach(piece => {
+    // New stats (which piece was found and how many) for new column
+    let found = 0;
+    let foundPiece = 0;
 
-      // Don't do anything else because it was already found
-      if (didFind) {
-        return;
-      }
+    for (let y = 0; y < rows; y++) {
 
-      // Reset things if piece is 0
+      // Current piece in this cell
+      let piece = grid[x][y];
+
+      // Go to next cell if current piece is 0
       if (piece === 0) {
-        found = 0;
-        foundPiece = 0;
-        return;
+        continue;
       }
 
       if (piece !== foundPiece) {
         found = 1;
         foundPiece = piece;
-        return;
+        continue;
       }
 
       // Increase number of found pieces
@@ -38,11 +43,11 @@ function isVertical(grid) {
 
       // More than 4 found pieces in a column?
       if (found >= matchesRequired) {
-        didFind = true;
-        return;
+        return true;
       }
-    });
-  });
+    }
+  }
 
-  return didFind;
+  // No matches found
+  return false;
 }
