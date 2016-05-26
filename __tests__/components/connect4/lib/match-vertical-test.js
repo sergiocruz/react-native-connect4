@@ -66,5 +66,21 @@ describe('isVertical', function() {
     expect(isVertical(grid)).toBe(false);
   });
 
+  it('should not match vertically for continuous piece in different columns', function() {
+
+    // another buggy grid
+    var grid = [
+      [ 0, 2, 2, 1, 1, 1 ],
+      [ 1, 1, 1, 2, 2, 2 ],
+      [ 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0 ],
+      [ 0, 0, 0, 0, 0, 0 ]
+    ];
+
+    expect(isVertical(grid)).toBe(false);
+  });
+
 
 });
