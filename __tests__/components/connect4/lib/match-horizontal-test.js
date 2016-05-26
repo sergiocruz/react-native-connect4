@@ -65,5 +65,21 @@ describe('isHorizontal', function() {
     expect(isHorizontal(grid)).toBe(false);
  });
 
+ it('should not match horizontally for continuous piece in different rows', function() {
+
+   // another buggy grid
+   var grid = [
+     [ 0, 0, 0, 0, 2, 1 ],
+     [ 0, 0, 0, 0, 2, 1 ],
+     [ 0, 0, 0, 0, 2, 1 ],
+     [ 0, 0, 0, 0, 0, 0 ],
+     [ 0, 0, 0, 0, 0, 1 ],
+     [ 0, 0, 0, 0, 0, 0 ],
+     [ 0, 0, 0, 0, 1, 2 ]
+   ];
+
+   expect(isHorizontal(grid)).toBe(false);
+ });
+
 
 });
