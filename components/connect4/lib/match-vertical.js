@@ -16,14 +16,11 @@ module.exports = isVertical;
  */
 function isVertical(grid) {
 
-  let found = 0;
-  let foundPiece = 0;
-
   for (let x = 0; x < columns; x++) {
 
-    // Reset stats whenever move to new column
-    found = 0;
-    foundPiece = 0;
+    // New stats (which piece was found and how many) for new column
+    let found = 0;
+    let foundPiece = 0;
 
     for (let y = 0; y < rows; y++) {
 
