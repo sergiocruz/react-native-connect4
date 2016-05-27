@@ -14,7 +14,7 @@
     "babel-core": "^6.4.5",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "jest-cli": "^0.8.2"
+    "jest-cli": "^12.1.1"
   },
   "jest": {
     "collectCoverage": true,
@@ -35,8 +35,7 @@
     ],
     "unmockedModulePathPatterns": [
       "react"
-    ],
-    "preprocessCachingDisabled": true
+    ]
   },
   "private": true,
   "license": "MIT",
