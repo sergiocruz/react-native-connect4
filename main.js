@@ -1,4 +1,6 @@
-import React, { AppRegistry, StatusBarIOS, Text } from 'react-native';
+import Exponent from 'exponent';
+import React from 'react';
+import { AppRegistry, Text, StatusBar } from 'react-native';
 
 import ExScreen from './ExScreen';
 import Connect4 from './components/connect4/connect4';
@@ -24,16 +26,10 @@ class App extends React.Component {
         style={styles.container}>
 
         <Connect4 />
+        <StatusBar barStyle="light-content" />
 
       </ExScreen>
     );
-  }
-
-  componentDidMount() {
-    if (StatusBarIOS) {
-      StatusBarIOS.setStyle('light-content', true);
-      StatusBarIOS.setHidden(false, 'fade');
-    }
   }
 }
 

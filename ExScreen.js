@@ -1,12 +1,12 @@
 'use strict';
 
-let React = require('react-native');
-let {
+import React from 'react';
+import {
   Animated,
   ScrollView,
   StyleSheet,
   View,
-} = React;
+} from 'react-native';
 
 let ExHeader = require('./ExHeader');
 
