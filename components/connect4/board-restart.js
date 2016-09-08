@@ -1,4 +1,5 @@
-import React, {TouchableHighlight, Text} from 'react-native';
+import React from 'react';
+import {TouchableHighlight, Text} from 'react-native';
 import styles, {colors} from './styles/stylesheet';
 
 export default class BoardRestart extends React.Component {

@@ -1,12 +1,12 @@
 'use strict';
 
-let React = require('react-native');
-let {
+import React from 'react';
+import {
   Animated,
   Easing,
   StyleSheet,
   View,
-} = React;
+} from 'react-native';
 
 let BODY_HEIGHT = 44;
 let TITLE_MARGIN_TOP = 12;

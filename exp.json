@@ -1,0 +1,23 @@
+{
+  "name": "Connect 4",
+  "description": "A straight-up, no fluff, Connect 4 by @sergiocruz",
+  "slug": "connect-4",
+  "sdkVersion": "9.0.0",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "primaryColor": "#d91e00",
+  "iconUrl": "https://s3-us-west-2.amazonaws.com/votexp/connect-4@3x.png",
+  "notification": {
+    "iconUrl": "https://s3.amazonaws.com/exp-us-standard/placeholder-push-icon-blue-circle.png",
+    "color": "#000000"
+  },
+  "loading": {
+    "iconUrl": "https://s3-us-west-2.amazonaws.com/votexp/connect-4@3x.png",
+    "hideExponentText": false
+  },
+  "packagerOpts": {
+    "assetExts": [
+      "ttf"
+    ]
+  }
+}
